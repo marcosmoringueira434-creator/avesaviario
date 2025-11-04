@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="passarosdoaviario" version="0.1.3">
+ <settings>
+  <title>pássarosdoaviário</title>
+  <revision description="created" date="10/29/25" />
+  <descriptors />
+  <meta_langs>pt</meta_langs>
+  <descriptions>
+   <description language="pt" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="capa" navButtons="none" />
+  <item name="SAB1" navButtons="none" />
+  <item name="SAB2" delay="3" navButtons="none" />
+  <item name="SAB3" delay="6" navButtons="none" />
+  <item name="B1" navButtons="none" />
+  <item name="B2" delay="3" navButtons="none" />
+  <item name="B3" delay="6" navButtons="none" />
+  <item name="T1" navButtons="none" />
+  <item name="T2" delay="3" navButtons="none" />
+  <item name="T3" delay="6" navButtons="none" />
+  <item name="SAI1" navButtons="none" />
+  <item name="SAI2" delay="3" navButtons="none" />
+  <item name="SAI3" delay="6" navButtons="none" />
+  <item name="Q1" navButtons="none" />
+  <item name="Q2" delay="3" navButtons="none" />
+  <item name="Q3" delay="6" navButtons="none" />
+  <item name="SAN1" navButtons="none" />
+  <item name="SAN2" delay="3" navButtons="none" />
+  <item name="SAN3" delay="6" navButtons="none" />
+  <item name="FIM" navButtons="fwd" />
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="FIM" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="PALMAS3.mp3" autoStart="true" />
+     <p>OBRIGADO POR PARTICIPAR.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="f8b5f61d9bfaf1a0362953b8ebe18f19.gif">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="SAN1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MS Gothic" size="24" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="CANTOSANHAÇO.mp3" loop="true" autoStart="true" />
+     <p>ESCUTE O CANTO DO PÁSSARO E DEPOIS CLIQUE NA IMAGEM E RESPONDA:</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="SILUETA.png">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MS Gothic" size="24" />
+      <color foreground="0xFFFFFF" background="0xFFFF00" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="SAN2" />
+     <p>CLIQUE AQUI</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Q1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MS Gothic" size="24" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="CANTOQUEROQUERO.mp3" loop="true" autoStart="true" />
+     <p>ESCUTE O CANTO DO PÁSSARO E DEPOIS CLIQUE NA IMAGEM E RESPONDA:</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="SILUETA.png">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MS Gothic" size="24" />
+      <color foreground="0xFFFFFF" background="0xFFFF00" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="Q2" />
+     <p>CLIQUE AQUI</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="SAI1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MS Gothic" size="24" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="CANTOSAIRA7CORES.mp3" loop="true" autoStart="true" />
+     <p>ESCUTE O CANTO DO PÁSSARO E DEPOIS CLIQUE NA IMAGEM E RESPONDA:</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="SILUETA.png">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MS Gothic" size="24" />
+      <color foreground="0xFFFFFF" background="0xFFFF00" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="SAI2" />
+     <p>CLIQUE AQUI</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="T1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MS Gothic" size="24" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="CANTOTUCANO.mp3" loop="true" autoStart="true" />
+     <p>ESCUTE O CANTO DO PÁSSARO E DEPOIS CLIQUE NA IMAGEM E RESPONDA:</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="SILUETA.png">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MS Gothic" size="24" />
+      <color foreground="0xFFFFFF" background="0xFFFF00" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="T2" />
+     <p>CLIQUE AQUI</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="B1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MS Gothic" size="24" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="BTV.mp3" loop="true" autoStart="true" />
+     <p>ESCUTE O CANTO DO PÁSSARO E DEPOIS CLIQUE NA IMAGEM E RESPONDA:</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="SILUETA.png">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MS Gothic" size="24" />
+      <color foreground="0xFFFFFF" background="0xFFFF00" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="B2" />
+     <p>CLIQUE AQUI</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="SAB1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MS Gothic" size="24" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="SL2.mp3" loop="true" autoStart="true" />
+     <p>ESCUTE O CANTO DO PÁSSARO E DEPOIS CLIQUE NA IMAGEM E RESPONDA:</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="SILUETA.png">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="MS Gothic" size="24" bold="true" />
+      <color foreground="0xFFFFFF" background="0xFFFF00" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="SAB2" />
+     <p>CLIQUE AQUI</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.Identify" name="SAN2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>RESPONDA:</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>PARABÉNS</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="1" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="false" actions="true" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <eventSounds>
+     <sound id="click" file="Canto Da sabiá - laranjeira - Pássaros do Brasil (128 KBps).mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="2" cellWidth="253.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0x00FFCC" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="ACERTO.mp3" />
+     <p>SANHAÇO</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0x33FF33" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>TUCANO</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>MARITACA</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>COLEIRO</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="sanhaco-cinza-resized.jpg" />
+    <cell image="TRISTE.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0x33FF33" />
+     </style>
+    </cell>
+    <cell image="TRISTE.gif" />
+    <cell image="TRISTE.gif" />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="Q2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>RESPONDA:</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>PARABÉNS</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="1" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="false" actions="true" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <eventSounds>
+     <sound id="click" file="Canto Da sabiá - laranjeira - Pássaros do Brasil (128 KBps).mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="2" cellWidth="253.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0x00FFCC" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>TRINCA-FERRO</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0x33FF33" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>TUCANO</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>SABIÁ</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="ACERTO.mp3" />
+     <p>QUERO-QUERO</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="TRISTE.gif" />
+    <cell image="TRISTE.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0x33FF33" />
+     </style>
+    </cell>
+    <cell image="TRISTE.gif" />
+    <cell image="QUERO-QUERO.jpg" />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="SAI2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>RESPONDA:</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>PARABÉNS</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="1" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="false" actions="true" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <eventSounds>
+     <sound id="click" file="Canto Da sabiá - laranjeira - Pássaros do Brasil (128 KBps).mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="2" cellWidth="253.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0x00FFCC" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>TRINCA-FERRO</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0x33FF33" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>TUCANO</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="ACERTO.mp3" />
+     <p>SAÍRA-SETE-CORES</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>QUERO-QUERO</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="TRISTE.gif" />
+    <cell image="TRISTE.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0x33FF33" />
+     </style>
+    </cell>
+    <cell image="SAÍRA_DE_SETE_CORES.jpg" />
+    <cell image="TRISTE.gif" />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="T2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>RESPONDA:</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>PARABÉNS</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="1" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="false" actions="true" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <eventSounds>
+     <sound id="click" file="Canto Da sabiá - laranjeira - Pássaros do Brasil (128 KBps).mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="2" cellWidth="253.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0x00FFCC" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>AZULÃO</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0x33FF33" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="ACERTO.mp3" />
+     <p>TUCANO</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>SANHAÇO</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>QUERO-QUERO</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="TRISTE.gif" />
+    <cell image="TUCANO.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0x33FF33" />
+     </style>
+    </cell>
+    <cell image="TRISTE.gif" />
+    <cell image="TRISTE.gif" />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="B2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>RESPONDA:</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>PARABÉNS</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="1" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="false" actions="true" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <eventSounds>
+     <sound id="click" file="Canto Da sabiá - laranjeira - Pássaros do Brasil (128 KBps).mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="2" cellWidth="253.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0x00FFCC" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>AZULÃO</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0x33FF33" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>SABIÁ LARANJEIRA</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>SANHAÇO</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="ACERTO.mp3" />
+     <p>BEM-TE-VI</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="TRISTE.gif" />
+    <cell image="TRISTE.gif">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0x33FF33" />
+     </style>
+    </cell>
+    <cell image="TRISTE.gif" />
+    <cell image="bem-te-vi-pitangus-sulphuratus-rudimar-narciso-cipriani-1--resized.jpg" />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.Identify" name="SAB2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>RESPONDA:</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="24" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>PARABÉNS</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="1" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="false" actions="true" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <eventSounds>
+     <sound id="click" file="Canto Da sabiá - laranjeira - Pássaros do Brasil (128 KBps).mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="2" cellWidth="253.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0x00FFCC" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>AZULÃO</p>
+    </cell>
+    <cell id="1" avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0x33FF33" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="ACERTO.mp3" />
+     <p>SABIÁ LARANJEIRA</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>SANHAÇO</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="faustao-errou.mp3" />
+     <p>BEM-TE-VI</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="TRISTE.gif" />
+    <cell image="SABIÁLARANJEIRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Copperplate Gothic Bold" size="24" bold="true" />
+      <color background="0x33FF33" />
+     </style>
+    </cell>
+    <cell image="TRISTE.gif" />
+    <cell image="TRISTE.gif" />
+   </cells>
+   <scramble times="31" primary="false" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="capa" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Pássaros do Aviário-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="SAB1" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="SAN3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="CANTOSANHAÇO.mp3" autoStart="true" />
+     <p>SANHAÇO</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="sanhaco-cinza-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Q3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="CANTOQUEROQUERO.mp3" autoStart="true" />
+     <p>QUERO-QUERO</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="QUERO-QUERO.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="SAI3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="CANTOSAIRA7CORES.mp3" autoStart="true" />
+     <p>SAÍRA-SETE-CORES</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="SAÍRA_DE_SETE_CORES.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="T3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="CANTOTUCANO.mp3" autoStart="true" />
+     <p>TUCANO</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="TUCANO.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="B3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="BTV.mp3" autoStart="true" />
+     <p>BEM-TE-VI</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="bem-te-vi-pitangus-sulphuratus-rudimar-narciso-cipriani-1--resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="SAB3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Copperplate Gothic Bold" size="24" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="SL2.mp3" autoStart="true" />
+     <p>SABIÁ LARANJEIRA</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <image name="fundo.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="SABIÁLARANJEIRA.png">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="ACERTOU.gif" file="acertou.gif" animated="true" />
+  <media name="f8b5f61d9bfaf1a0362953b8ebe18f19.gif" file="f8b5f61d9bfaf1a0362953b8ebe18f19.gif" animated="true" />
+  <media name="TRISTE.gif" file="triste.gif" animated="true" />
+  <media name="bem-te-vi-pitangus-sulphuratus-rudimar-narciso-cipriani-1--resized.jpg" file="bem-te-vi-pitangus-sulphuratus-rudimar-narciso-cipriani-1--resized.jpg" />
+  <media name="Pássaros do Aviário-resized.jpg" file="passaros_do_aviario-resized.jpg" />
+  <media name="QUERO-QUERO.jpg" file="quero-quero.jpg" />
+  <media name="sanhaco-cinza-resized.jpg" file="sanhaco-cinza-resized.jpg" />
+  <media name="SAÍRA_DE_SETE_CORES.jpg" file="saira_de_sete_cores.jpg" />
+  <media name="SOMBRA_PÁSSARO-resized.jpg" file="sombra_passaro-resized.jpg" />
+  <media name="TUCANO.jpg" file="tucano.jpg" />
+  <media name="ACERTO.mp3" file="acerto.mp3" />
+  <media name="BEM TE VI CANTANDO (128 KBps).mp3" file="bem_te_vi_cantando__128_kbps_.mp3" />
+  <media name="BTV.mp3" file="btv.mp3" />
+  <media name="Canto Da sabiá - laranjeira - Pássaros do Brasil (128 KBps).mp3" file="canto_da_sabia_-_laranjeira_-_passaros_do_brasil__128_kbps_.mp3" />
+  <media name="CANTOQUEROQUERO.mp3" file="cantoqueroquero.mp3" />
+  <media name="CANTOSAIRA7CORES.mp3" file="cantosaira7cores.mp3" />
+  <media name="CANTOSANHAÇO.mp3" file="cantosanhaco.mp3" />
+  <media name="CANTOTUCANO.mp3" file="cantotucano.mp3" />
+  <media name="faustao-errou.mp3" file="faustao-errou.mp3" />
+  <media name="PALMAS3.mp3" file="palmas3.mp3" />
+  <media name="SL.mp3" file="sl.mp3" />
+  <media name="SL2.mp3" file="sl2.mp3" />
+  <media name="fundo.png" file="fundo.png" />
+  <media name="SABIÁLARANJEIRA.png" file="sabialaranjeira.png" />
+  <media name="SILUETA.png" file="silueta.png" />
+ </mediaBag>
+</JClicProject>
+
